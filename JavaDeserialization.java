@@ -8,7 +8,7 @@ import java.util.*;
 import java.lang.reflect.*;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
-import java_programs.*;
+import quixbugs.incorrect.*;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -30,7 +30,7 @@ public class JavaDeserialization {
 
         // Get parameter type for class method.
         try {
-            Class target_class = Class.forName("java_programs." + className);
+            Class target_class = Class.forName("quixbugs.incorrect." + className);
             Method[] method = target_class.getDeclaredMethods();
 
             for (Method m : method) {
